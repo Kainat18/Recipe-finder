@@ -1,0 +1,303 @@
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}*/
+html, body{
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: "Karla" , sans-serif;
+}
+.welcome-screen{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width:100%;
+  height: 100vh;
+  }
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("images/darkfood(3).jpg") no-repeat center center/cover;
+  width: 100%; /* Set the width to 100% of viewport width */
+  height: 100vh; /* Set the height to 100% of viewport height */
+  z-index: -1;
+}
+.description{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.description-1{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: rgba(0, 0, 0, 0.8);
+width:480px;
+margin:60px auto 30px auto;
+border-radius:15px;
+border:2px solid white;
+z-index:1;
+}
+.chefs-image{
+  width:150px;
+height: auto;
+filter: invert(1);
+}
+.description-1 p{
+  font-size:30px;
+  font-weight: bold;
+}
+
+.start-btn{
+background: rgba(0, 0, 0, 0.8);
+padding: 15px 30px;
+border:2px solid white;
+width:230px;
+height:70px;
+margin:auto;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+border-radius:16px;
+font-size:20px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-align: center;
+}
+.start-btn i{
+  margin-left:10px;
+  font-size: 20px;
+}
+/* Navbar styling */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(89.88deg, rgb(79, 79, 79) -1.38%, rgb(0, 0, 0) 112.28%);
+ 
+}
+
+
+.recipe-logo {
+  width: 90px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 70px;
+  list-style: none;
+  margin-right:70px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff9900;
+}
+.recipe-link , .Home-link{
+   text-decoration:none;
+   font-size: 20px;
+   color: white;
+
+}
+form {
+  display:flex;
+  flex-direction:row;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  gap:20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color:white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: "Karla" , sans-serif;
+}
+
+.submit-btn{
+  display: block;
+  width: 50%;
+  color: hsl(0, 0%, 100%);
+  height:40px;
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius:10px;
+  font-size:18px;
+  font-family: 'Karla' , sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top:10px;
+}
+
+.recipes-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+
+}
+.recipe-display{
+width: 330px;
+height: 270px;
+border-radius: 16px ;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+
+text-align: center;
+margin:10px; 
+position: relative;
+background-color:white;
+/* background-color: #F0F0F0; */
+/* border:2px solid black; */
+}
+.recipe-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;  
+  border-radius: 0px 0px 16px 16px;
+  height:100px;
+}
+.recipe-content p{
+  text-align: left;
+  margin-left:15px;
+}
+.recipe-image{
+  width:150px;
+  height:150px;
+ border-radius:50%; 
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+z-index: -1;
+margin-top:20px;
+margin-left:30px;
+} 
+.recipe-display h2{
+  color: white;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-family:"Karla" , sans-serif;
+  height:37px;
+}
+.image-container i {
+  position:relative;
+  top:-120px;
+  bottom:0px;
+  left:30px;
+  right:0px;
+ font-size:20px;
+ background-color:  rgba(0, 0, 0, 0.9);
+ padding:9px;
+ border-radius:5px;
+ color:#b62020
+}
+
+.fa-clock{
+  margin-left:10px;
+}
+
+/* LoadingSpinner.css */
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #101111;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin:auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*responsive styling*/
+@media screen and (max-width:700px){
+  .chefs-image{
+    width:110px;
+  }
+  .description-1{
+  width:320px;
+  }
+  .description-1 p{
+    font-size:25px;
+  }
+.start-btn{
+  width:210px;
+  }
+.start-btn i{
+  margin-left:10px;
+  font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width:500px){
+form{
+  width:300px;
+}
+.submit-btn{
+  font-size:12px;
+}
+.recipe-logo{
+  width:50px;
+}
+}
