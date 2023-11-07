@@ -8,12 +8,10 @@ function Navbar() {
     <nav className="nav-container">
        <img src={recipelogo}  className="recipe-logo" alt="Recipe Logo"/>
         <ul className="nav-links">
-            <li className="links"><Link to="/recipe" className="recipe-link">Recipes</Link></li>
-            <li className="links"><Link to="/welcome" className="Home-link">Home</Link></li>
-          
+        <li className="links"><Link to="/home" className="Home-link">Home</Link></li>
+        <li className="links"><Link to="/recipe" className="recipe-link">Recipes</Link></li>
         </ul>
-        
-    </nav>
+     </nav>
   )
 }
 

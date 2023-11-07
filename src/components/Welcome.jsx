@@ -12,11 +12,9 @@ function Welcome() {
          <div className="description-1">
          <p> Discover 100+k premium recipes</p>
          </div>
-      
-     
-      <button aria-label="Start Cooking" className="start-btn">
-      <Link to="/recipe" className="recipe-link">Get Cooking</Link>
-         <i className="fa-solid fa-arrow-right" style={{color: "#ffffff"}}></i> 
+        <button aria-label="Start Cooking" className="start-btn">
+          <Link to="/recipe" className="recipe-link">Get Cooking</Link>
+          <i className="fa-solid fa-arrow-right" style={{color: "#ffffff"}}></i> 
         </button>
         </div>
     </section>
