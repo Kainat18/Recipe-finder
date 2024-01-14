@@ -1,8 +1,37 @@
-# React + Vite
+# Recipe App 
+The `Recipe Finder` is a React-based web application that allows users to find recipes based on provided ingredients. It utilizes the Edamam API to fetch recipe data and display the results.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview](./src/assets/recipeapp.png)
+![Preview](./src/assets/recipeapp(2).png)
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these steps to set up and run the Recipe App project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/Recipe-finder.git
+
+2. **Navigate to Project Directory:**
+cd Recipe-finder
+
+3. **Install dependencies:**
+npm install
+
+4. **Run the development server:**
+npm run dev
+
+5. **Open in Browser**
+Open your browser and go to http://localhost:3000 to view the Recipe Finder.
+
+## Requirements
+Make sure you have Node.js and npm installed on your system.
+
+This set of instructions assumes you are using npm as your package manager. If you use yarn, replace npm with yarn in the commands.
+
+## Technologies Used
+- React
+- JavaScript (ES6+)
+- CSS
+- HTML
+
