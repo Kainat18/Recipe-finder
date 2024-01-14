@@ -29,6 +29,11 @@ Make sure you have Node.js and npm installed on your system.
 
 This set of instructions assumes you are using npm as your package manager. If you use yarn, replace npm with yarn in the commands.
 
+## Configuration
+To configure the RecipeForm component, you need to obtain API keys from Edamam. Update the apiKey and appId variables in the component with your own keys.
+const apiKey = import.meta.env.VITE_API_KEY;
+const appId = import.meta.env.VITE_APPLICATION_ID;
+
 ## Technologies Used
 - React
 - JavaScript (ES6+)
